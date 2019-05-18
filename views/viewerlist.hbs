@@ -37,7 +37,7 @@
         {{#each results as |result|}}
         <tr>
             <td align="center">
-                <button class="ui active button" onclick="window.location.href = 'http://localhost:4000/User/{{result.name}}';" style="text-decoration:none"><i class="user icon"></i>{{result.name}}</button>
+                <button class="ui active button" onclick="window.location.href = '/User/{{result.name}}';" style="text-decoration:none"><i class="user icon"></i>{{result.name}}</button>
             </td>
             <td align="center">{{result.Account_balance}}</td>
             <td align="center">{{result.Email_id}}</td>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <style>
+        #1 {
+            height : 100vh;
+        }
+    </style>
+</head>
+<body>
+    {{!-- <h1>USER</h1>
+    <br>
+    <br>
+    <h1>{{results.name}}</h1>
+    <br>
+    <br>
+    <h1>{{results.Account_balance}}</h1>
+    <br>
+    <br>
+    <h1>{{results.Image}}</h1>
+    <br>
+    <br>
+    <h1>{{results.FatherName}}</h1>
+    <br>
+    <br>
+    <h1>{{results.Email_id}}</h1>
+    <button onclick="window.location.href = 'http://localhost:4000/User/{{results.name}}/MoneyTransfer';" style="text-decoration:none">SEND CREDITS</button> --}}
+    
+    <div id="1" ></div>> 
+    <div class="ui centered card">
+  <div class="content">
+    <div class="header">{{results.name}} <i class="user icon"></i></div>
+  </div>
+  <div class="content">
+    <h4 class="ui sub header">User Details</h4>
+    <div class="ui small feed">
+      FatherName : {{results.FatherName}}
+      <br>
+      <br>
+
+      EmailID : {{results.Email_id}}
+      <br>
+      <br>
+      Credits available <i class="bitcoin icon"></i> : {{results.Account_balance}}
+    </div>
+  </div>
+  <div class="extra content">
+    <button class="ui button" onclick="window.location.href = 'http://localhost:4000/User/{{results.name}}/MoneyTransfer';">Send Credits</button>
+  </div>
+</div>
+</div>
+
+
+</body>
+</html>

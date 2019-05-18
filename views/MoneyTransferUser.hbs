@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Money Transfer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <style>
+        
+        h1 {
+            align:center;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="1">
+    <div class="ui centered grid" >
+    {{#each results as |result|}}
+                {{!-- <button class="ui button" onclick="window.location.href = 'http://localhost:4000/User/SendTo/{{result.name}}';" style="text-decoration:none">{{result.name}}</button> --}}
+                <button id="3" class="ui active button" onclick="window.location.href = 'http://localhost:4000/User/SendTo/{{result.name}}';">
+                <i class="icon user"></i>
+                <div class="four wide column"><h4 >{{result.name}}</h4></div>
+                </button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <br>
+            <br>    
+        {{/each}}
+    </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h1 class="text">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        
+        SELECT USER TO SEND CREDIT</h1>
+</body>
+</html>
